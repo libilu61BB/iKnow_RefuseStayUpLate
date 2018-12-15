@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.phone_test">
+    package="com.example.ikonw2">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -12,12 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".SettingActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".CreatActivity">
+        </activity>
+        <activity android:name=".AccountSetting">
         </activity>
         <activity android:name=".OurInfo" />
         <activity android:name=".Feedback" />
@@ -26,5 +30,6 @@
         <activity android:name=".set_Notice" />
         <activity android:name=".SetLabelForEvent" />
     </application>
+
 
 </manifest>
